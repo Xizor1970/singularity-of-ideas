@@ -2,11 +2,11 @@
 
 **Understanding how the most powerful ideas emerge, compete, and rise to dominance**
 
-[![Pages](https://img.shields.io/badge/8-pages-f0c27f)](https://hendrikvolschenk.github.io/singularity-of-ideas/) [![Animations](https://img.shields.io/badge/4-interactive_animations-6a82fb)](#interactive-visualisations) [![Dependencies](https://img.shields.io/badge/dependencies-zero-5a9)](#)
+[![Pages](https://img.shields.io/badge/8-pages-f0c27f)](https://xizor1970.github.io/singularity-of-ideas/) [![Animations](https://img.shields.io/badge/4-interactive_animations-6a82fb)](#interactive-visualisations) [![Dependencies](https://img.shields.io/badge/dependencies-zero-5a9)](#)
 
 ---
 
-## [View the Live Site](https://hendrikvolschenk.github.io/singularity-of-ideas/)
+## [View the Live Site](https://xizor1970.github.io/singularity-of-ideas/)
 
 ---
 
