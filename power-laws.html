@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Laws — Singularity of Ideas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <span class="site-title">Singularity of Ideas</span>
+            <a href="index.html">Home</a>
+            <a href="network-theory.html">Networks</a>
+            <a href="power-laws.html" class="active">Power Laws</a>
+            <a href="memetics.html">Memetics</a>
+            <a href="information-theory.html">Information</a>
+            <a href="evolutionary-selection.html">Evolution</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="predictions.html">Predictions</a>
+            <a href="animations.html">Interactive</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Power Laws</h1>
+        <p class="subtitle">Why a tiny fraction of ideas capture almost all the influence — the mathematics of extreme inequality</p>
+    </div>
+
+    <div class="content">
+        <div class="stat-strip">
+            <div class="stat">
+                <div class="number">1%</div>
+                <div class="label">of papers get 50%+ of citations</div>
+            </div>
+            <div class="stat">
+                <div class="number">α ≈ 3</div>
+                <div class="label">typical exponent in citation networks</div>
+            </div>
+            <div class="stat">
+                <div class="number">80/20</div>
+                <div class="label">Pareto ratio (often 90/10)</div>
+            </div>
+            <div class="stat">
+                <div class="number">10⁴×</div>
+                <div class="label">range from top to median paper</div>
+            </div>
+        </div>
+
+        <h2>The Inequality of Ideas</h2>
+
+        <p>The distribution of influence among ideas is not a bell curve. It is radically, mathematically skewed. A tiny elite of concepts captures the vast majority of citations, adoptions, and downstream influence — while the long tail of millions of ideas receives almost none.</p>
+
+        <p>This is not a quirk of any particular field. Power law distributions appear in scientific citations, patent references, book sales, programming language adoption, and GitHub stars. It is a <em>universal signature</em> of how ideas compete for finite attention.</p>
+
+        <div class="explanation">
+            <h4>What Is a Power Law?</h4>
+            <p>A power law distribution is one where the probability of observing a value x decreases as a power of x. Unlike a normal distribution (where extremes are exponentially rare), power laws have "fat tails" — extreme events are rare but not vanishingly so.</p>
+            <p>In practical terms: if citations followed a normal distribution, a paper with 10,000 citations would be as unlikely as a person being 15 feet tall. Under a power law, such papers exist in the thousands — rare but expected.</p>
+        </div>
+
+        <div class="formula">
+            P(x) ∝ x<sup>−α</sup>
+            <span class="label">Power law probability distribution — α determines inequality</span>
+        </div>
+
+        <div class="formula">
+            α ≈ 3.16 (scientific citations) | α ≈ 2.34 (web links) | α ≈ 2.09 (personal wealth)
+            <span class="label">Measured exponents — Clauset, Shalizi & Newman (2009) — lower α = more extreme inequality</span>
+        </div>
+
+        <h2>The Pareto Principle — and Beyond</h2>
+
+        <div class="explanation">
+            <h4>Vilfredo Pareto (1896)</h4>
+            <p>Pareto observed that 80% of Italy's land was owned by 20% of the population. This "80/20 rule" appears throughout idea propagation — but often understates the inequality.</p>
+            <p>In scientific citations, the ratio is closer to <strong>90/10</strong>: roughly 10% of published papers receive 90% of all citations. The top 1% receive over half. And the top 0.01% — a few hundred papers across all of science — are cited so frequently they become part of the shared vocabulary of entire disciplines.</p>
+        </div>
+
+        <div class="big-number">
+            <div class="value">47%</div>
+            <div class="context">of all published papers receive zero citations (Redner 1998) — ideas that never propagated beyond their authors</div>
+        </div>
+
+        <div class="analogy">
+            <p>Imagine a city where buildings represent ideas, and height represents influence. In a "normal" city, most buildings are 3–5 stories with the tallest reaching perhaps 10. In the city of ideas, most structures are single-story shacks — but a handful are skyscrapers reaching 1,000 floors. And one or two pierce the atmosphere entirely. The scale between median and maximum is not 3× — it's 10,000×.</p>
+        </div>
+
+        <h2>The Matthew Effect</h2>
+
+        <div class="explanation">
+            <h4>Robert K. Merton (1968)</h4>
+            <p>"For unto every one that hath shall be given" — Merton named this the Matthew Effect after the biblical parable. In science, it means:</p>
+            <p>Famous scientists receive disproportionate credit for discoveries, even when unknown researchers contributed equally. A paper by a Nobel laureate receives more attention and citations <em>simply because of the author's name</em> — not the paper's content.</p>
+            <p>Merton documented cases where identical ideas published by unknown researchers were ignored, while the same idea published (sometimes later) by a famous name became canonical.</p>
+        </div>
+
+        <div class="stat-strip">
+            <div class="stat">
+                <div class="number">2–5×</div>
+                <div class="label">citation boost from famous author</div>
+            </div>
+            <div class="stat">
+                <div class="number">12×</div>
+                <div class="label">citation boost from top journal</div>
+            </div>
+            <div class="stat">
+                <div class="number">~50%</div>
+                <div class="label">of Nobel discoveries had precursors</div>
+            </div>
+        </div>
+
+        <div class="analogy">
+            <p>The Matthew Effect is compound interest for reputation. A researcher who publishes one highly-cited paper becomes more visible, gets invited to better conferences, attracts better students, and gets published in better journals — all of which increase the citations on their <em>next</em> paper, regardless of its quality. After 20 years, two researchers of identical ability can differ by 100× in citations purely through this compounding.</p>
+        </div>
+
+        <h2>Cumulative Advantage</h2>
+
+        <div class="explanation">
+            <h4>Derek de Solla Price (1976)</h4>
+            <p>Price formalised the Matthew Effect as "cumulative advantage" — mathematically equivalent to Barabási's preferential attachment. A paper's probability of receiving a new citation is proportional to the citations it already has.</p>
+            <p>This generates power law distributions mechanistically: early advantages compound over time, creating extreme inequality from initially random variation. The first paper to be cited in a new area often remains the most-cited — not because it was best, but because it was first and accumulated advantage.</p>
+        </div>
+
+        <div class="formula">
+            P(new citation → paper i) = (cᵢ + 1) / Σⱼ(cⱼ + 1)
+            <span class="label">Cumulative advantage — cᵢ is current citation count of paper i</span>
+        </div>
+
+        <h2>Zipf's Law in Language and Ideas</h2>
+
+        <div class="explanation">
+            <h4>The Frequency-Rank Relationship</h4>
+            <p>George Zipf (1949) observed that the frequency of a word is inversely proportional to its rank. The most common word ("the") appears roughly twice as often as the second most common ("of"), three times as often as the third, and so on.</p>
+            <p>This same law governs idea usage. The most-referenced concept in a field appears with a frequency proportional to 1/rank. A few core concepts dominate the discourse while thousands of specialised terms appear only once or twice.</p>
+        </div>
+
+        <div class="formula">
+            f(r) ∝ 1/r<sup>s</sup> where s ≈ 1
+            <span class="label">Zipf's law — frequency × rank ≈ constant</span>
+        </div>
+
+        <h2>Power Laws Across Domains</h2>
+
+        <h3>Academic Citations</h3>
+        <div class="explanation">
+            <h4>The Shape of Scientific Influence</h4>
+            <p>Across all of science (based on ISI/Web of Science data spanning 58 million papers):</p>
+            <p><strong>47% of papers</strong> receive 0 citations (Redner 1998) — completely unnoticed.</p>
+            <p><strong>Top 10%</strong> of papers receive ~50% of all citations (Bornmann & Leydesdorff 2016).</p>
+            <p><strong>Top 1%</strong> of authors receive 21% of all citations — up from 14% in 2000.</p>
+            <p><strong>Top 0.026%</strong> (14,499 papers) are cited 1,000+ times and define their fields.</p>
+            <p>The most-cited paper in history (Lowry et al., 1951, on protein measurement) has over 305,000 citations — roughly 300,000× the median cited paper.</p>
+        </div>
+
+        <h3>Programming Languages</h3>
+        <p>Of thousands of programming languages created since the 1950s, approximately 20 capture 95% of all developer activity. The top 5 (Python, JavaScript, Java, C/C++, TypeScript) account for roughly 70% of all code written in 2025.</p>
+
+        <h3>GitHub Repositories</h3>
+        <p>Of over 300 million GitHub repositories, the top 0.001% (~3,000 repos) receive the majority of stars and forks. The median repository has zero stars. The distribution exponent α ≈ 1.8 — more extreme than academic citations.</p>
+
+        <h3>Patents</h3>
+        <p>Patent citations follow a power law with α ≈ 2.3. The most-cited patents (often platform technologies like PageRank or multi-touch) receive thousands of forward citations while the median patent receives 1–3.</p>
+
+        <h2>Why Power Laws — Not Normal Distributions?</h2>
+
+        <div class="explanation">
+            <h4>The Generative Mechanisms</h4>
+            <p>Normal distributions arise from additive processes (many small independent factors summing up). Power laws arise from <strong>multiplicative processes</strong> — where advantages compound rather than add.</p>
+            <p>Three mechanisms generate power laws in idea propagation:</p>
+            <p><strong>1. Preferential attachment</strong> — new attention flows proportionally to existing attention.</p>
+            <p><strong>2. Fitness variation</strong> — ideas vary in intrinsic "stickiness," and even small fitness advantages compound over time.</p>
+            <p><strong>3. First-mover advantage</strong> — early entrants accumulate advantage during the period when competition is low.</p>
+        </div>
+
+        <div class="speculation-box">
+            <span class="badge">Speculation</span>
+            <h4>Power Laws as Attractor States</h4>
+            <p>If power law distributions are the inevitable outcome of any system with preferential attachment, then extreme inequality in idea influence is not a market failure to be corrected — it is the <em>natural attractor state</em> of any knowledge system.</p>
+            <p>This suggests that efforts to "democratise" knowledge cannot change the shape of the distribution, only which ideas occupy the top positions. The hierarchy itself is mathematically inevitable.</p>
+            <p>If true, the strategic question shifts from "how to make all ideas equal" to "how to ensure the ideas at the top deserve to be there."</p>
+            <p class="caveat">This is a normative extension of a mathematical observation. Whether the inevitability of power laws is desirable is a values question, not a scientific one. It's also possible that deliberate institutional design can shift α (making the distribution less extreme) even if it cannot eliminate the power law form entirely.</p>
+        </div>
+
+        <h2>Breaking the Power Law</h2>
+
+        <div class="explanation">
+            <h4>Can Peripheral Ideas Escape?</h4>
+            <p>While power laws seem deterministic at the aggregate level, individual ideas can sometimes "jump the queue" through:</p>
+            <p><strong>Crisis/paradigm shift</strong> — when the dominant idea fails spectacularly, attention suddenly redistributes (Kuhn's Structure of Scientific Revolutions).</p>
+            <p><strong>Technological enablement</strong> — when new tools make a previously impractical idea suddenly viable (neural networks after GPU computing).</p>
+            <p><strong>Cross-domain bridges</strong> — when an idea from one field solves an urgent problem in another (PageRank from linear algebra to web search).</p>
+            <p><strong>Institutional disruption</strong> — when new publication/communication channels bypass existing gatekeepers (arXiv, Twitter, open source).</p>
+        </div>
+
+        <div class="question-box">
+            <h4>Open Questions</h4>
+            <ul>
+                <li>Is the power law exponent α changing over time as communication costs approach zero?</li>
+                <li>Do AI-generated ideas follow the same distribution, or does AI's lack of network position change the dynamics?</li>
+                <li>Is there an optimal α for scientific progress — too extreme means missed ideas, too flat means no signal?</li>
+                <li>Can we design citation/attention systems that preserve the signal benefits of power laws while reducing the Matthew Effect's unfairness?</li>
+                <li>As the volume of ideas increases exponentially (more papers, more code, more patents), does the concentration at the top increase or decrease?</li>
+            </ul>
+        </div>
+
+        <div class="page-nav">
+            <a href="network-theory.html">
+                <span class="direction">← Previous</span>
+                <span class="title">Network Theory</span>
+            </a>
+            <a href="memetics.html" class="next">
+                <span class="direction">Next →</span>
+                <span class="title">Memetics</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-title">Singularity of Ideas</div>
+        <p>Exploring the mechanics of intellectual dominance</p>
+    </footer>
+</body>
+</html>

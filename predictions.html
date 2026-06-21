@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions & Signals — Singularity of Ideas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <span class="site-title">Singularity of Ideas</span>
+            <a href="index.html">Home</a>
+            <a href="network-theory.html">Networks</a>
+            <a href="power-laws.html">Power Laws</a>
+            <a href="memetics.html">Memetics</a>
+            <a href="information-theory.html">Information</a>
+            <a href="evolutionary-selection.html">Evolution</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="predictions.html" class="active">Predictions</a>
+            <a href="animations.html">Interactive</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Predictions & Signals</h1>
+        <p class="subtitle">Can we identify tomorrow's dominant ideas today? The framework for evaluating idea potential</p>
+    </div>
+
+    <div class="content">
+        <div class="stat-strip">
+            <div class="stat">
+                <div class="number">7</div>
+                <div class="label">leading indicators identified</div>
+            </div>
+            <div class="stat">
+                <div class="number">~3 yrs</div>
+                <div class="label">early signal lead time</div>
+            </div>
+            <div class="stat">
+                <div class="number">10³</div>
+                <div class="label">ideas competing per niche</div>
+            </div>
+            <div class="stat">
+                <div class="number">< 0.1%</div>
+                <div class="label">achieve lasting dominance</div>
+            </div>
+        </div>
+
+        <h2>The Prediction Problem</h2>
+
+        <p>If we understand the mechanisms of idea dominance — network position, power law dynamics, memetic fitness, compression power, and evolutionary selection — can we use that understanding to predict which ideas will dominate <em>before</em> they do?</p>
+
+        <p>This is the ultimate practical question of this research. A reliable early-detection framework would enable organisations to invest in transformative ideas before the market recognises them — and avoid investing in ideas that appear exciting but will not endure.</p>
+
+        <div class="explanation">
+            <h4>Why Prediction Is Hard</h4>
+            <p>Three factors make idea prediction fundamentally difficult:</p>
+            <p><strong>Path dependence:</strong> Early random events (which reviewer reads the paper, which conference it's presented at) can have outsized effects on an idea's trajectory.</p>
+            <p><strong>Timing uncertainty:</strong> An idea can be correct and well-positioned but still fail if it arrives before its fitness window opens (neural networks in the 1980s).</p>
+            <p><strong>Interaction effects:</strong> An idea's success often depends on other ideas emerging simultaneously (CRISPR needed NGS; transformers needed GPUs).</p>
+            <p>Despite these challenges, patterns do exist. The case studies reveal consistent early signals that precede dominance.</p>
+        </div>
+
+        <h2>The Seven Leading Indicators</h2>
+
+        <h3>1. Cross-Domain Citation Velocity</h3>
+
+        <div class="explanation">
+            <h4>Signal: An idea being cited outside its origin field</h4>
+            <p>When a paper starts receiving citations from fields unrelated to its origin, this indicates it has <em>bridge potential</em> — it can cross community boundaries. This is one of the strongest early indicators of paradigm-level importance.</p>
+            <p><strong>Example:</strong> Shannon's 1948 paper was originally a communications engineering paper. Within 5 years it was being cited by biologists, linguists, psychologists, and economists — each recognising its relevance beyond engineering.</p>
+            <p><strong>Metric:</strong> Count the number of distinct research fields citing the idea in its first 3 years. If > 5 fields, the idea has high cross-domain potential.</p>
+        </div>
+
+        <h3>2. Implementation Speed</h3>
+
+        <div class="explanation">
+            <h4>Signal: How fast people build on it</h4>
+            <p>Ideas that inspire rapid implementation — code repositories, experimental replications, product prototypes — within months of publication show high <em>generative potential</em>. They don't just explain; they enable.</p>
+            <p><strong>Example:</strong> The transformer paper (June 2017) had open-source implementations within weeks. BERT and GPT-1 appeared within 18 months. This speed of building-upon is a strong dominance signal.</p>
+            <p><strong>Metric:</strong> Count implementations, extensions, and derivative works within the first 12 months. Compare to base rate for the field.</p>
+        </div>
+
+        <h3>3. Compression Ratio</h3>
+
+        <div class="explanation">
+            <h4>Signal: Can it be explained in one sentence to a non-expert?</h4>
+            <p>Ideas that achieve extreme compression — expressible as a simple rule that generates vast predictions — tend to dominate over ideas that require lengthy qualification. This is the information-theoretic signal.</p>
+            <p><strong>High compression:</strong> "DNA is a double helix encoding genetic information" — one sentence, generates an entire field.</p>
+            <p><strong>Low compression:</strong> A theory requiring 50 pages of context to state — however correct, it will spread slowly.</p>
+            <p><strong>Metric:</strong> Minimum description length of the core insight, divided by the scope of phenomena it covers.</p>
+        </div>
+
+        <h3>4. Network Position of Early Adopters</h3>
+
+        <div class="explanation">
+            <h4>Signal: Who picks it up first</h4>
+            <p>An idea adopted early by network hubs (highly-cited researchers, influential institutions, well-connected labs) has its R₀ amplified by 5–50× compared to peripheral adoption. The quality of early adopters matters more than the quantity.</p>
+            <p><strong>Example:</strong> CRISPR was adopted early by Feng Zhang (MIT/Broad Institute) and George Church (Harvard) — two of the most connected labs in molecular biology. This accelerated spread dramatically.</p>
+            <p><strong>Metric:</strong> Average h-index (or equivalent centrality measure) of first 10 citers. Compare to field median.</p>
+        </div>
+
+        <h3>5. Enabling Technology Readiness</h3>
+
+        <div class="explanation">
+            <h4>Signal: Is the infrastructure ready?</h4>
+            <p>Many brilliant ideas fail because the technology to implement them doesn't yet exist. Conversely, when enabling technologies reach maturity just as an idea emerges, explosive growth becomes likely.</p>
+            <p><strong>Example:</strong> Deep learning exploded when GPU computing became accessible (~2012). The ideas existed since the 1980s — only the infrastructure was missing.</p>
+            <p><strong>Metric:</strong> Assess whether key enabling technologies have passed their own adoption inflection points. If 2+ enabling technologies are mature simultaneously, the fitness window is open.</p>
+        </div>
+
+        <h3>6. Problem Urgency</h3>
+
+        <div class="explanation">
+            <h4>Signal: Is there acute demand for this type of solution?</h4>
+            <p>Ideas that address an <em>urgent, widely-felt</em> problem spread faster than those addressing theoretical gaps. Urgency creates demand that pulls ideas through networks.</p>
+            <p><strong>Example:</strong> COVID vaccines (mRNA technology existed since 2005 but was niche until a global pandemic created overwhelming demand).</p>
+            <p><strong>Metric:</strong> Is the problem the idea addresses currently growing in urgency? Are multiple groups independently searching for solutions in this space?</p>
+        </div>
+
+        <h3>7. Recombination Potential</h3>
+
+        <div class="explanation">
+            <h4>Signal: Can it combine with other ideas?</h4>
+            <p>Ideas that serve as building blocks — combining productively with many other ideas — tend to achieve disproportionate influence. They become <em>platforms</em> rather than endpoints.</p>
+            <p><strong>Example:</strong> The transformer architecture combines with pretraining, reinforcement learning, multimodal inputs, tool use, and retrieval. Each combination creates a new application — making the core idea more valuable.</p>
+            <p><strong>Metric:</strong> Count the number of distinct combination partners (other ideas/technologies the new idea can productively combine with). Higher = more platform potential.</p>
+        </div>
+
+        <h2>The Evaluation Framework</h2>
+
+        <div class="explanation">
+            <h4>Scoring an Idea's Dominance Potential</h4>
+            <p>Combining the seven indicators into a structured evaluation:</p>
+        </div>
+
+        <div class="stat-strip">
+            <div class="stat">
+                <div class="number">5+</div>
+                <div class="label">fields citing = high signal</div>
+            </div>
+            <div class="stat">
+                <div class="number">< 12 mo</div>
+                <div class="label">to implementation = high signal</div>
+            </div>
+            <div class="stat">
+                <div class="number">1 sentence</div>
+                <div class="label">expressibility = high signal</div>
+            </div>
+        </div>
+
+        <div class="formula">
+            Dominance Score = Σᵢ wᵢ × Signalᵢ where weights reflect historical predictive power
+            <span class="label">Composite score — higher = more likely to achieve dominance</span>
+        </div>
+
+        <div class="explanation">
+            <h4>Historical Validation</h4>
+            <p>Applying this framework retroactively to our case studies:</p>
+            <p><strong>Transformers (2017):</strong> 7/7 indicators strong → became dominant within 5 years ✓</p>
+            <p><strong>CRISPR (2012):</strong> 7/7 indicators strong → became dominant within 3 years ✓</p>
+            <p><strong>Bitcoin (2008):</strong> 5/7 indicators strong (low compression ratio for the full technical idea; low initial adopter centrality) → achieved dominance but slower (5–10 years)</p>
+            <p><strong>Continental drift (1912):</strong> 2/7 indicators (high compression, high problem urgency) but 5 absent (no enabling technology, low adopter centrality, no implementation pathway) → 50 years to dominance</p>
+        </div>
+
+        <h2>Current Candidates</h2>
+
+        <div class="explanation">
+            <h4>Ideas Showing Strong Early Signals (2024–2026)</h4>
+            <p>Based on the framework, several current ideas show patterns consistent with future dominance:</p>
+        </div>
+
+        <div class="speculation-box">
+            <span class="badge">Speculation</span>
+            <h4>High-Signal Ideas to Watch</h4>
+            <p><strong>Mechanistic Interpretability of Neural Networks:</strong> Understanding what neural networks actually learn internally. Cross-domain citations growing rapidly. Multiple enabling technologies (sparse autoencoders, causal intervention methods) maturing simultaneously. Urgent safety demand.</p>
+            <p><strong>Synthetic Biology as Programming:</strong> Treating biological systems as programmable substrates — DNA as code, cells as computers. CRISPR + DNA synthesis + machine learning creating a convergent enabling stack. Implementation speed accelerating.</p>
+            <p><strong>Energy-Based Models / World Models:</strong> AI systems that learn physics-like representations of the world rather than just pattern matching. Cross-domain potential (robotics, science, reasoning). Still early but strong compression potential.</p>
+            <p><strong>Decentralised Science (DeSci):</strong> Using blockchain and token mechanisms to fund and incentivise scientific research outside traditional institutions. High urgency (broken funding models), high recombination potential.</p>
+            <p class="caveat">These are informed predictions based on current signal patterns — not certainties. Historical base rate for "promising early-stage ideas" achieving dominance is ~5–10%. Most will fail or be absorbed into other frameworks.</p>
+        </div>
+
+        <h2>The Meta-Prediction</h2>
+
+        <div class="explanation">
+            <h4>How Prediction Itself Changes the Game</h4>
+            <p>A crucial reflexivity problem: if idea-dominance prediction becomes reliable and widely used, it would change the dynamics it predicts. Ideas identified as "likely to dominate" would receive more investment, potentially creating self-fulfilling prophecies — or, conversely, attracting premature attention that burns out interest before the idea matures.</p>
+            <p>This observer effect means prediction tools must account for their own influence on the system. A publicly-known prediction shifts the fitness landscape.</p>
+        </div>
+
+        <h2>Practical Applications</h2>
+
+        <div class="explanation">
+            <h4>Who Benefits from Early Detection?</h4>
+            <p><strong>Research funders:</strong> Allocate grants toward ideas showing strong early signals before the crowd arrives. 3-year lead time = massive advantage in building expertise.</p>
+            <p><strong>Technology investors:</strong> Identify enabling technologies and platform ideas before they become obvious. The framework separates genuine potential from hype.</p>
+            <p><strong>Corporate R&D:</strong> Decide which emerging paradigms to build internal capability in — before competitors. The cost of late adoption compounds.</p>
+            <p><strong>Individual researchers:</strong> Choose research directions with high dominance potential. Working on the idea that will define the next 20 years is a career-making decision.</p>
+            <p><strong>AI systems:</strong> Automated monitoring of citation patterns, implementation velocity, and cross-domain bridges could create real-time "idea radar" systems.</p>
+        </div>
+
+        <div class="question-box">
+            <h4>Open Questions</h4>
+            <ul>
+                <li>Can the prediction framework be made precise enough for investment-grade decisions — or will it always be probabilistic?</li>
+                <li>Does predicting an idea's dominance accelerate or hinder it? (The observer effect problem)</li>
+                <li>Can AI systems identify signals that humans miss — subtle cross-domain connections or unusual citation patterns?</li>
+                <li>Is there a "kill zone" — a signal level at which prediction becomes self-fulfilling and therefore meaningless?</li>
+                <li>How do we distinguish genuine early signals from manufactured hype (where signals are artificially created by promoters)?</li>
+            </ul>
+        </div>
+
+        <div class="page-nav">
+            <a href="case-studies.html">
+                <span class="direction">← Previous</span>
+                <span class="title">Case Studies</span>
+            </a>
+            <a href="animations.html" class="next">
+                <span class="direction">Next →</span>
+                <span class="title">Interactive Visualisations</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-title">Singularity of Ideas</div>
+        <p>Exploring the mechanics of intellectual dominance</p>
+    </footer>
+</body>
+</html>

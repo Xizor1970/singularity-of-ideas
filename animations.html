@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Visualisations — Singularity of Ideas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <span class="site-title">Singularity of Ideas</span>
+            <a href="index.html">Home</a>
+            <a href="network-theory.html">Networks</a>
+            <a href="power-laws.html">Power Laws</a>
+            <a href="memetics.html">Memetics</a>
+            <a href="information-theory.html">Information</a>
+            <a href="evolutionary-selection.html">Evolution</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="predictions.html">Predictions</a>
+            <a href="animations.html" class="active">Interactive</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Interactive Visualisations</h1>
+        <p class="subtitle">See the dynamics in motion — network cascades, power law emergence, and evolutionary competition</p>
+    </div>
+
+    <div class="content">
+
+        <!-- ANIMATION 1: Network Cascade -->
+        <h2>1. Idea Cascade Through a Network</h2>
+
+        <div class="animation-container">
+            <canvas id="network-canvas" width="800" height="500"></canvas>
+            <div class="controls">
+                <label>Network Density: <input type="range" id="net-density" min="2" max="8" value="4"></label>
+                <label>Hub Influence: <input type="range" id="hub-influence" min="1" max="10" value="5"></label>
+                <button id="net-reset">Reset</button>
+                <button id="net-infect">Start Cascade</button>
+            </div>
+        </div>
+
+        <div class="animation-explainer">
+            <div class="col">
+                <h4>What You're Seeing</h4>
+                <p>A network of nodes (minds) connected by edges (relationships). Click "Start Cascade" to introduce an idea at a random node. The idea spreads to connected nodes based on connection strength and the hub influence parameter. Watch how network topology determines which nodes the idea reaches — and which remain untouched.</p>
+            </div>
+            <div class="col">
+                <h4>So What?</h4>
+                <p>This demonstrates why network position matters more than idea quality for spread. The same idea starting at a hub vs. a peripheral node produces dramatically different outcomes. Adjust "Hub Influence" to see how preferential attachment amplifies or dampens the cascade. Real academic networks exhibit exactly this behaviour.</p>
+            </div>
+        </div>
+
+        <!-- ANIMATION 2: Power Law Emergence -->
+        <h2>2. Power Law Emergence</h2>
+
+        <div class="animation-container">
+            <canvas id="powerlaw-canvas" width="800" height="400"></canvas>
+            <div class="controls">
+                <label>New Ideas/Second: <input type="range" id="pl-rate" min="1" max="20" value="5"></label>
+                <label>Preferential Attachment: <input type="range" id="pl-pref" min="0" max="10" value="7"></label>
+                <button id="pl-reset">Reset</button>
+                <button id="pl-start">Start Simulation</button>
+            </div>
+        </div>
+
+        <div class="animation-explainer">
+            <div class="col">
+                <h4>What You're Seeing</h4>
+                <p>A citation market. Each dot represents a paper. Each timestep, new papers arrive and cite existing ones. When "Preferential Attachment" is high, popular papers are much more likely to be cited again — creating a rich-get-richer dynamic. The histogram on the right shows the emerging distribution — watch it develop the characteristic long tail of a power law.</p>
+            </div>
+            <div class="col">
+                <h4>So What?</h4>
+                <p>This shows how extreme inequality (1% of papers getting 50% of citations) emerges naturally from a simple rule: "the more cited you are, the more likely you are to be cited again." No conspiracy, no intent — just a mathematical feedback loop. Reduce preferential attachment to zero and the distribution becomes more equal (approaching uniform).</p>
+            </div>
+        </div>
+
+        <!-- ANIMATION 3: Evolutionary Competition -->
+        <h2>3. Idea Competition & Selection</h2>
+
+        <div class="animation-container">
+            <canvas id="evolution-canvas" width="800" height="400"></canvas>
+            <div class="controls">
+                <label>Mutation Rate: <input type="range" id="evo-mutation" min="1" max="10" value="3"></label>
+                <label>Selection Pressure: <input type="range" id="evo-selection" min="1" max="10" value="5"></label>
+                <button id="evo-reset">Reset</button>
+                <button id="evo-start">Start Evolution</button>
+                <button id="evo-shift">Paradigm Shift!</button>
+            </div>
+        </div>
+
+        <div class="animation-explainer">
+            <div class="col">
+                <h4>What You're Seeing</h4>
+                <p>Multiple competing ideas (coloured populations) evolving over time. Each idea's fitness determines its growth rate. Mutations create new variants. When you click "Paradigm Shift!" the fitness landscape inverts — previously fit ideas become unfit and vice versa. Watch how dominant ideas can collapse instantly when the environment changes.</p>
+            </div>
+            <div class="col">
+                <h4>So What?</h4>
+                <p>This visualises Kuhn's paradigm shifts in real time. During "normal science," one idea dominates and alternatives are suppressed. But a sudden environmental change (new technology, crisis, anomaly) can invert the entire landscape. The dominant species becomes endangered; the marginal becomes dominant. This is how deep learning replaced symbolic AI, and how quantum mechanics replaced classical physics.</p>
+            </div>
+        </div>
+
+        <!-- ANIMATION 4: Compression Visualisation -->
+        <h2>4. Compression Power</h2>
+
+        <div class="animation-container">
+            <canvas id="compression-canvas" width="800" height="400"></canvas>
+            <div class="controls">
+                <label>Theory Simplicity: <input type="range" id="comp-simple" min="1" max="10" value="3"></label>
+                <label>Data Points: <input type="range" id="comp-data" min="10" max="200" value="50"></label>
+                <button id="comp-reset">Reset</button>
+                <button id="comp-generate">Generate Theory</button>
+            </div>
+        </div>
+
+        <div class="animation-explainer">
+            <div class="col">
+                <h4>What You're Seeing</h4>
+                <p>Data points (observations) scattered across the canvas. When you click "Generate Theory," a curve (theory) attempts to explain the data. Lower "Theory Simplicity" produces complex curves that fit every point perfectly (overfitting). Higher simplicity produces elegant curves that capture the pattern while missing some noise. The compression ratio — data explained per unit of theory — is displayed.</p>
+            </div>
+            <div class="col">
+                <h4>So What?</h4>
+                <p>This is Occam's Razor visualised. The most powerful theories aren't those that explain every data point (overfitting/epicycles) — they're those that capture the underlying pattern with minimal complexity. Newton's laws are a simple curve that explains billions of data points. Ptolemy's epicycles were a complex curve that explained fewer observations with more parameters.</p>
+            </div>
+        </div>
+
+        <div class="page-nav">
+            <a href="predictions.html">
+                <span class="direction">← Previous</span>
+                <span class="title">Predictions & Signals</span>
+            </a>
+            <a href="index.html" class="next">
+                <span class="direction">Return to →</span>
+                <span class="title">Home</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-title">Singularity of Ideas</div>
+        <p>Exploring the mechanics of intellectual dominance</p>
+    </footer>
+
+    <script>
+    // ===== ANIMATION 1: Network Cascade =====
+    (function() {
+        const canvas = document.getElementById('network-canvas');
+        const ctx = canvas.getContext('2d');
+        const densitySlider = document.getElementById('net-density');
+        const hubSlider = document.getElementById('hub-influence');
+        const resetBtn = document.getElementById('net-reset');
+        const infectBtn = document.getElementById('net-infect');
+
+        let nodes = [];
+        let edges = [];
+        let animating = false;
+        let infectionQueue = [];
+
+        function createNetwork() {
+            nodes = [];
+            edges = [];
+            const count = 40;
+            const density = parseInt(densitySlider.value);
+
+            for (let i = 0; i < count; i++) {
+                const angle = (i / count) * Math.PI * 2;
+                const radius = 150 + Math.random() * 80;
+                nodes.push({
+                    x: canvas.width / 2 + Math.cos(angle) * radius + (Math.random() - 0.5) * 60,
+                    y: canvas.height / 2 + Math.sin(angle) * radius + (Math.random() - 0.5) * 60,
+                    connections: 0,
+                    infected: false,
+                    infectedAt: -1,
+                    size: 4 + Math.random() * 4
+                });
+            }
+
+            // Create hub nodes
+            for (let i = 0; i < 3; i++) {
+                nodes[i].size = 10 + Math.random() * 5;
+                nodes[i].x = canvas.width / 2 + (Math.random() - 0.5) * 100;
+                nodes[i].y = canvas.height / 2 + (Math.random() - 0.5) * 100;
+            }
+
+            // Create edges using preferential attachment
+            for (let i = 1; i < count; i++) {
+                const numEdges = Math.min(density, i);
+                for (let e = 0; e < numEdges; e++) {
+                    let target;
+                    if (Math.random() < 0.6) {
+                        // Preferential attachment
+                        const weights = nodes.slice(0, i).map(n => n.connections + 1);
+                        const total = weights.reduce((a, b) => a + b, 0);
+                        let r = Math.random() * total;
+                        target = 0;
+                        for (let j = 0; j < weights.length; j++) {
+                            r -= weights[j];
+                            if (r <= 0) { target = j; break; }
+                        }
+                    } else {
+                        target = Math.floor(Math.random() * i);
+                    }
+                    if (target !== i && !edges.some(e => (e[0] === i && e[1] === target) || (e[0] === target && e[1] === i))) {
+                        edges.push([i, target]);
+                        nodes[i].connections++;
+                        nodes[target].connections++;
+                    }
+                }
+            }
+            draw();
+        }
+
+        function draw() {
+            ctx.fillStyle = '#0d0d14';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw edges
+            edges.forEach(([a, b]) => {
+                const na = nodes[a], nb = nodes[b];
+                ctx.beginPath();
+                ctx.moveTo(na.x, na.y);
+                ctx.lineTo(nb.x, nb.y);
+                if (na.infected && nb.infected) {
+                    ctx.strokeStyle = 'rgba(240, 194, 127, 0.4)';
+                    ctx.lineWidth = 1.5;
+                } else {
+                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+                    ctx.lineWidth = 0.5;
+                }
+                ctx.stroke();
+            });
+
+            // Draw nodes
+            nodes.forEach(node => {
+                ctx.beginPath();
+                ctx.arc(node.x, node.y, node.size, 0, Math.PI * 2);
+                if (node.infected) {
+                    const age = Date.now() - node.infectedAt;
+                    const pulse = 1 + Math.sin(age / 300) * 0.3;
+                    ctx.fillStyle = '#f0c27f';
+                    ctx.shadowColor = '#f0c27f';
+                    ctx.shadowBlur = 10 * pulse;
+                } else {
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+                    ctx.shadowBlur = 0;
+                }
+                ctx.fill();
+                ctx.shadowBlur = 0;
+            });
+
+            // Draw infection count
+            const infected = nodes.filter(n => n.infected).length;
+            ctx.fillStyle = '#f0c27f';
+            ctx.font = '14px Inter, sans-serif';
+            ctx.fillText(`Infected: ${infected}/${nodes.length}`, 20, 30);
+        }
+
+        function startCascade() {
+            if (animating) return;
+            // Reset infections
+            nodes.forEach(n => { n.infected = false; n.infectedAt = -1; });
+            // Pick a random starting node (prefer hubs based on slider)
+            const hubInfluence = parseInt(hubSlider.value) / 10;
+            let startNode;
+            if (Math.random() < hubInfluence) {
+                startNode = nodes.reduce((a, b) => a.connections > b.connections ? a : b);
+            } else {
+                startNode = nodes[Math.floor(Math.random() * nodes.length)];
+            }
+            startNode.infected = true;
+            startNode.infectedAt = Date.now();
+            infectionQueue = [startNode];
+            animating = true;
+            animate();
+        }
+
+        function animate() {
+            if (!animating) return;
+            draw();
+
+            if (infectionQueue.length > 0 && Math.random() < 0.15) {
+                const current = infectionQueue.shift();
+                const nodeIdx = nodes.indexOf(current);
+                const hubInf = parseInt(hubSlider.value) / 5;
+
+                edges.forEach(([a, b]) => {
+                    let neighbor;
+                    if (a === nodeIdx) neighbor = nodes[b];
+                    else if (b === nodeIdx) neighbor = nodes[a];
+                    if (neighbor && !neighbor.infected) {
+                        const prob = 0.3 + (neighbor.connections / 20) * hubInf * 0.1;
+                        if (Math.random() < prob) {
+                            neighbor.infected = true;
+                            neighbor.infectedAt = Date.now();
+                            infectionQueue.push(neighbor);
+                        }
+                    }
+                });
+            }
+
+            if (infectionQueue.length === 0 && nodes.every(n => n.infected || !edges.some(([a, b]) => (a === nodes.indexOf(n) || b === nodes.indexOf(n)) && nodes[a === nodes.indexOf(n) ? b : a].infected))) {
+                animating = false;
+            }
+
+            if (animating) requestAnimationFrame(animate);
+            else draw();
+        }
+
+        resetBtn.addEventListener('click', () => { animating = false; createNetwork(); });
+        infectBtn.addEventListener('click', startCascade);
+        densitySlider.addEventListener('input', () => { animating = false; createNetwork(); });
+        createNetwork();
+    })();
+
+    // ===== ANIMATION 2: Power Law Emergence =====
+    (function() {
+        const canvas = document.getElementById('powerlaw-canvas');
+        const ctx = canvas.getContext('2d');
+        const rateSlider = document.getElementById('pl-rate');
+        const prefSlider = document.getElementById('pl-pref');
+        const resetBtn = document.getElementById('pl-reset');
+        const startBtn = document.getElementById('pl-start');
+
+        let papers = [];
+        let running = false;
+        let intervalId = null;
+
+        function reset() {
+            papers = [];
+            for (let i = 0; i < 10; i++) {
+                papers.push({ citations: 1, x: Math.random() * 500, y: Math.random() * canvas.height });
+            }
+            running = false;
+            if (intervalId) clearInterval(intervalId);
+            draw();
+        }
+
+        function draw() {
+            ctx.fillStyle = '#0d0d14';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw papers as dots (left side)
+            const maxCite = Math.max(...papers.map(p => p.citations), 1);
+            papers.forEach(p => {
+                const size = 2 + (p.citations / maxCite) * 12;
+                const alpha = 0.3 + (p.citations / maxCite) * 0.7;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(240, 194, 127, ${alpha})`;
+                ctx.fill();
+            });
+
+            // Draw histogram (right side)
+            const histX = 550;
+            const histW = 220;
+            const histH = canvas.height - 60;
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.strokeRect(histX, 30, histW, histH);
+
+            // Bin citations
+            const maxBin = Math.ceil(Math.log2(maxCite + 1)) + 1;
+            const bins = new Array(maxBin).fill(0);
+            papers.forEach(p => {
+                const bin = Math.floor(Math.log2(p.citations + 1));
+                if (bin < bins.length) bins[bin]++;
+            });
+            const maxCount = Math.max(...bins, 1);
+
+            bins.forEach((count, i) => {
+                const barH = (count / maxCount) * (histH - 20);
+                const barW = histW / maxBin - 2;
+                const x = histX + i * (histW / maxBin) + 1;
+                const y = 30 + histH - barH;
+                ctx.fillStyle = '#f0c27f';
+                ctx.fillRect(x, y, barW, barH);
+            });
+
+            // Labels
+            ctx.fillStyle = '#889';
+            ctx.font = '11px Inter, sans-serif';
+            ctx.fillText('Citations (log₂ bins) →', histX, 30 + histH + 15);
+            ctx.fillText(`Papers: ${papers.length}`, 20, 25);
+            ctx.fillText(`Max citations: ${maxCite}`, 20, 42);
+            ctx.fillText(`Gini: ${calcGini().toFixed(3)}`, 20, 59);
+        }
+
+        function calcGini() {
+            if (papers.length < 2) return 0;
+            const sorted = papers.map(p => p.citations).sort((a, b) => a - b);
+            const n = sorted.length;
+            let num = 0;
+            sorted.forEach((x, i) => { num += (2 * (i + 1) - n - 1) * x; });
+            const denom = n * sorted.reduce((a, b) => a + b, 0);
+            return denom === 0 ? 0 : num / denom;
+        }
+
+        function step() {
+            const rate = parseInt(rateSlider.value);
+            const pref = parseInt(prefSlider.value) / 10;
+
+            for (let r = 0; r < rate; r++) {
+                // Add new paper
+                const newPaper = { citations: 0, x: Math.random() * 500, y: Math.random() * canvas.height };
+                papers.push(newPaper);
+
+                // New paper cites existing papers
+                const numCitations = 1 + Math.floor(Math.random() * 3);
+                for (let c = 0; c < numCitations; c++) {
+                    let target;
+                    if (Math.random() < pref && papers.length > 1) {
+                        // Preferential attachment
+                        const weights = papers.map(p => p.citations + 1);
+                        const total = weights.reduce((a, b) => a + b, 0);
+                        let rand = Math.random() * total;
+                        target = 0;
+                        for (let j = 0; j < weights.length; j++) {
+                            rand -= weights[j];
+                            if (rand <= 0) { target = j; break; }
+                        }
+                    } else {
+                        target = Math.floor(Math.random() * papers.length);
+                    }
+                    papers[target].citations++;
+                }
+            }
+
+            // Cap at 500 papers for performance
+            if (papers.length > 500) {
+                running = false;
+                clearInterval(intervalId);
+            }
+
+            draw();
+        }
+
+        function start() {
+            if (running) { running = false; clearInterval(intervalId); startBtn.textContent = 'Start Simulation'; return; }
+            running = true;
+            startBtn.textContent = 'Pause';
+            intervalId = setInterval(step, 100);
+        }
+
+        resetBtn.addEventListener('click', reset);
+        startBtn.addEventListener('click', start);
+        reset();
+    })();
+
+    // ===== ANIMATION 3: Evolutionary Competition =====
+    (function() {
+        const canvas = document.getElementById('evolution-canvas');
+        const ctx = canvas.getContext('2d');
+        const mutSlider = document.getElementById('evo-mutation');
+        const selSlider = document.getElementById('evo-selection');
+        const resetBtn = document.getElementById('evo-reset');
+        const startBtn = document.getElementById('evo-start');
+        const shiftBtn = document.getElementById('evo-shift');
+
+        const colors = ['#f0c27f', '#6a82fb', '#fc5c7d', '#5a9', '#c084fc', '#fb923c'];
+        let populations = [];
+        let history = [];
+        let running = false;
+        let intervalId = null;
+        let generation = 0;
+        let fitnessLandscape = [];
+
+        function reset() {
+            running = false;
+            if (intervalId) clearInterval(intervalId);
+            generation = 0;
+            populations = colors.map((c, i) => ({
+                color: c,
+                size: 50 + Math.random() * 50,
+                fitness: 0.3 + Math.random() * 0.7
+            }));
+            fitnessLandscape = populations.map(p => p.fitness);
+            history = [populations.map(p => p.size)];
+            startBtn.textContent = 'Start Evolution';
+            draw();
+        }
+
+        function draw() {
+            ctx.fillStyle = '#0d0d14';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            const h = canvas.height - 40;
+            const w = canvas.width - 40;
+            const maxGen = Math.max(history.length, 100);
+
+            // Draw population history as stacked area
+            if (history.length > 1) {
+                for (let p = populations.length - 1; p >= 0; p--) {
+                    ctx.beginPath();
+                    ctx.moveTo(20, h + 20);
+                    for (let g = 0; g < history.length; g++) {
+                        const x = 20 + (g / maxGen) * w;
+                        let stackedY = 0;
+                        for (let pp = 0; pp <= p; pp++) {
+                            stackedY += history[g][pp] || 0;
+                        }
+                        const total = history[g].reduce((a, b) => a + b, 1);
+                        const y = h + 20 - (stackedY / total) * h;
+                        ctx.lineTo(x, y);
+                    }
+                    ctx.lineTo(20 + ((history.length - 1) / maxGen) * w, h + 20);
+                    ctx.closePath();
+                    ctx.fillStyle = populations[p].color + '88';
+                    ctx.fill();
+                }
+            }
+
+            // Labels
+            ctx.fillStyle = '#889';
+            ctx.font = '11px Inter, sans-serif';
+            ctx.fillText(`Generation: ${generation}`, 30, 25);
+
+            // Fitness indicators
+            populations.forEach((p, i) => {
+                ctx.fillStyle = p.color;
+                ctx.fillRect(canvas.width - 150, 15 + i * 18, 10, 10);
+                ctx.fillStyle = '#889';
+                ctx.fillText(`fitness: ${p.fitness.toFixed(2)}`, canvas.width - 135, 24 + i * 18);
+            });
+        }
+
+        function step() {
+            const mutation = parseInt(mutSlider.value) / 100;
+            const selection = parseInt(selSlider.value) / 5;
+
+            // Update populations based on fitness
+            const totalFitness = populations.reduce((sum, p) => sum + p.fitness * p.size, 0);
+            populations.forEach(p => {
+                const growth = (p.fitness * selection - 0.5) * 0.1;
+                p.size = Math.max(1, p.size * (1 + growth + (Math.random() - 0.5) * mutation));
+            });
+
+            // Normalize to keep total constant
+            const total = populations.reduce((s, p) => s + p.size, 0);
+            populations.forEach(p => { p.size = (p.size / total) * 300; });
+
+            // Mutation: occasionally shift fitness slightly
+            if (Math.random() < mutation) {
+                const idx = Math.floor(Math.random() * populations.length);
+                populations[idx].fitness = Math.max(0.1, Math.min(1, populations[idx].fitness + (Math.random() - 0.5) * 0.2));
+            }
+
+            history.push(populations.map(p => p.size));
+            generation++;
+
+            if (history.length > 500) {
+                running = false;
+                clearInterval(intervalId);
+                startBtn.textContent = 'Start Evolution';
+            }
+
+            draw();
+        }
+
+        function paradigmShift() {
+            // Invert fitness landscape
+            populations.forEach(p => {
+                p.fitness = 1.1 - p.fitness + (Math.random() - 0.5) * 0.3;
+                p.fitness = Math.max(0.1, Math.min(1, p.fitness));
+            });
+            draw();
+        }
+
+        function start() {
+            if (running) { running = false; clearInterval(intervalId); startBtn.textContent = 'Start Evolution'; return; }
+            running = true;
+            startBtn.textContent = 'Pause';
+            intervalId = setInterval(step, 50);
+        }
+
+        resetBtn.addEventListener('click', reset);
+        startBtn.addEventListener('click', start);
+        shiftBtn.addEventListener('click', paradigmShift);
+        reset();
+    })();
+
+    // ===== ANIMATION 4: Compression Visualisation =====
+    (function() {
+        const canvas = document.getElementById('compression-canvas');
+        const ctx = canvas.getContext('2d');
+        const simpleSlider = document.getElementById('comp-simple');
+        const dataSlider = document.getElementById('comp-data');
+        const resetBtn = document.getElementById('comp-reset');
+        const genBtn = document.getElementById('comp-generate');
+
+        let dataPoints = [];
+        let theory = null;
+        let trueFunction = null;
+
+        function generateData() {
+            const n = parseInt(dataSlider.value);
+            // True underlying pattern: a simple sine wave
+            trueFunction = (x) => 200 + Math.sin(x * 0.02) * 100 + Math.cos(x * 0.005) * 50;
+            dataPoints = [];
+            for (let i = 0; i < n; i++) {
+                const x = 50 + Math.random() * 700;
+                const noise = (Math.random() - 0.5) * 80;
+                dataPoints.push({ x, y: trueFunction(x) + noise });
+            }
+            theory = null;
+            draw();
+        }
+
+        function generateTheory() {
+            const simplicity = parseInt(simpleSlider.value);
+            const degree = 11 - simplicity; // Higher simplicity = lower polynomial degree
+
+            // Fit polynomial of given degree
+            theory = fitPolynomial(dataPoints, degree);
+            draw();
+        }
+
+        function fitPolynomial(points, degree) {
+            // Simple polynomial fit using least squares (simplified)
+            const coeffs = [];
+            const step = canvas.width / 200;
+            const result = [];
+
+            // Generate curve points using local averaging with bandwidth based on simplicity
+            const bandwidth = (11 - degree) * 40 + 20;
+            for (let px = 0; px < canvas.width; px += step) {
+                let weightSum = 0;
+                let valueSum = 0;
+                points.forEach(p => {
+                    const dist = Math.abs(p.x - px);
+                    const weight = Math.exp(-(dist * dist) / (2 * bandwidth * bandwidth));
+                    weightSum += weight;
+                    valueSum += weight * p.y;
+                });
+                result.push({ x: px, y: weightSum > 0 ? valueSum / weightSum : canvas.height / 2 });
+            }
+            return result;
+        }
+
+        function draw() {
+            ctx.fillStyle = '#0d0d14';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw data points
+            dataPoints.forEach(p => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+                ctx.fill();
+            });
+
+            // Draw theory curve
+            if (theory && theory.length > 1) {
+                ctx.beginPath();
+                ctx.moveTo(theory[0].x, theory[0].y);
+                for (let i = 1; i < theory.length; i++) {
+                    ctx.lineTo(theory[i].x, theory[i].y);
+                }
+                ctx.strokeStyle = '#f0c27f';
+                ctx.lineWidth = 2.5;
+                ctx.stroke();
+                ctx.lineWidth = 1;
+
+                // Calculate and display compression ratio
+                const simplicity = parseInt(simpleSlider.value);
+                const theoryLength = 11 - simplicity; // "parameters" in the theory
+                const dataExplained = dataPoints.length;
+                const ratio = (dataExplained / theoryLength).toFixed(1);
+
+                ctx.fillStyle = '#f0c27f';
+                ctx.font = 'bold 16px Inter, sans-serif';
+                ctx.fillText(`Compression ratio: ${ratio}:1`, 30, 30);
+                ctx.font = '12px Inter, sans-serif';
+                ctx.fillStyle = '#889';
+                ctx.fillText(`Theory complexity: ${theoryLength} parameters | Data points: ${dataExplained}`, 30, 50);
+
+                // Calculate fit quality
+                let totalError = 0;
+                dataPoints.forEach(p => {
+                    const nearest = theory.reduce((a, b) => Math.abs(a.x - p.x) < Math.abs(b.x - p.x) ? a : b);
+                    totalError += Math.abs(nearest.y - p.y);
+                });
+                const avgError = (totalError / dataPoints.length).toFixed(1);
+                ctx.fillText(`Average error: ${avgError}px | Fit quality: ${Math.max(0, 100 - avgError).toFixed(0)}%`, 30, 68);
+            }
+        }
+
+        resetBtn.addEventListener('click', generateData);
+        genBtn.addEventListener('click', generateTheory);
+        simpleSlider.addEventListener('input', () => { if (theory) generateTheory(); });
+        dataSlider.addEventListener('input', generateData);
+        generateData();
+    })();
+    </script>
+</body>
+</html>
