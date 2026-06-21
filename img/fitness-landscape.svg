@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#12121a"/>
+  <!-- Fitness landscape - mountainous terrain -->
+  <!-- Background mountains (lower, dimmer) -->
+  <path d="M 0 380 C 50 360, 80 340, 120 300 C 160 260, 180 240, 200 250 C 220 260, 240 280, 280 250 C 320 220, 340 200, 360 180 C 380 160, 400 150, 420 160 C 440 170, 460 190, 500 170 C 540 150, 560 130, 580 100 C 600 70, 620 60, 640 70 C 660 80, 680 110, 720 150 C 760 190, 780 220, 800 250 L 800 380 Z" fill="url(#mountainGrad)" opacity="0.6"/>
+  <linearGradient id="mountainGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#6a82fb" stop-opacity="0.4"/>
+    <stop offset="60%" stop-color="#12121a" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#12121a"/>
+  </linearGradient>
+  <!-- Mountain outline -->
+  <path d="M 0 380 C 50 360, 80 340, 120 300 C 160 260, 180 240, 200 250 C 220 260, 240 280, 280 250 C 320 220, 340 200, 360 180 C 380 160, 400 150, 420 160 C 440 170, 460 190, 500 170 C 540 150, 560 130, 580 100 C 600 70, 620 60, 640 70 C 660 80, 680 110, 720 150 C 760 190, 780 220, 800 250" stroke="#6a82fb" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <!-- Local optimum marker (stuck on small peak) -->
+  <circle cx="360" cy="175" r="8" fill="#fc5c7d" opacity="0.9"/>
+  <circle cx="360" cy="175" r="14" fill="none" stroke="#fc5c7d" stroke-width="0.8" opacity="0.4"/>
+  <!-- Arrow showing it's stuck -->
+  <text x="360" y="155" font-family="Inter, sans-serif" font-size="10" fill="#fc5c7d" text-anchor="middle" font-weight="600">Local Optimum</text>
+  <text x="360" y="200" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">(Paradigm Trap)</text>
+  <!-- Global optimum marker (highest peak) -->
+  <circle cx="630" cy="55" r="10" fill="#f0c27f" opacity="0.9"/>
+  <circle cx="630" cy="55" r="18" fill="none" stroke="#f0c27f" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="630" cy="55" r="26" fill="none" stroke="#f0c27f" stroke-width="0.4" opacity="0.2"/>
+  <text x="630" y="35" font-family="Inter, sans-serif" font-size="10" fill="#f0c27f" text-anchor="middle" font-weight="600">Global Optimum</text>
+  <!-- Valley between them (the barrier) -->
+  <path d="M 420 160 L 420 340" stroke="#889" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.3"/>
+  <path d="M 500 170 L 500 340" stroke="#889" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.3"/>
+  <text x="460" y="230" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">Valley of</text>
+  <text x="460" y="242" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">Reduced Fitness</text>
+  <!-- Dotted arrow showing the jump needed -->
+  <path d="M 375 175 C 420 120, 500 90, 615 60" stroke="#f0c27f" stroke-width="1.2" stroke-dasharray="4,3" fill="none" opacity="0.6"/>
+  <polygon points="613,58 620,63 612,65" fill="#f0c27f" opacity="0.6"/>
+  <text x="490" y="100" font-family="Inter, sans-serif" font-size="9" fill="#f0c27f" text-anchor="middle" opacity="0.8">Paradigm Shift</text>
+  <!-- Y-axis label -->
+  <text x="25" y="200" font-family="Inter, sans-serif" font-size="11" fill="#889" text-anchor="middle" transform="rotate(-90, 25, 200)">Fitness (influence) →</text>
+  <!-- X-axis label -->
+  <text x="400" y="390" font-family="Inter, sans-serif" font-size="11" fill="#889" text-anchor="middle">Idea Space →</text>
+  <!-- Title -->
+  <text x="400" y="22" font-family="Inter, sans-serif" font-size="13" fill="#e0e0e8" text-anchor="middle" font-weight="600">Intellectual Fitness Landscape</text>
+</svg>

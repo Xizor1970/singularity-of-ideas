@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" fill="none">
+  <rect width="800" height="420" fill="#12121a"/>
+  <!-- Title -->
+  <text x="400" y="25" font-family="Inter, sans-serif" font-size="13" fill="#e0e0e8" text-anchor="middle" font-weight="600">The Seven Leading Indicators of Idea Dominance</text>
+  <!-- Radar/spider chart -->
+  <!-- Center point -->
+  <!-- Seven axes radiating from center -->
+  <!-- Axis lines -->
+  <g stroke="#889" stroke-width="0.5" opacity="0.3">
+    <line x1="400" y1="220" x2="400" y2="70"/>
+    <line x1="400" y1="220" x2="528" y2="112"/>
+    <line x1="400" y1="220" x2="583" y2="234"/>
+    <line x1="400" y1="220" x2="528" y2="342"/>
+    <line x1="400" y1="220" x2="400" y2="370"/>
+    <line x1="400" y1="220" x2="272" y2="342"/>
+    <line x1="400" y1="220" x2="217" y2="234"/>
+    <line x1="400" y1="220" x2="272" y2="112"/>
+  </g>
+  <!-- Concentric rings -->
+  <circle cx="400" cy="220" r="50" fill="none" stroke="#889" stroke-width="0.3" opacity="0.2"/>
+  <circle cx="400" cy="220" r="100" fill="none" stroke="#889" stroke-width="0.3" opacity="0.2"/>
+  <circle cx="400" cy="220" r="150" fill="none" stroke="#889" stroke-width="0.3" opacity="0.2"/>
+  <!-- Filled polygon (example: Transformer architecture scoring) -->
+  <polygon points="400,85 518,125 570,230 505,330 400,355 295,330 230,230 282,125" fill="rgba(240,194,127,0.12)" stroke="#f0c27f" stroke-width="1.5"/>
+  <!-- Another polygon (example: Bitcoin - lower on some axes) -->
+  <polygon points="400,110 490,145 540,234 470,310 400,340 330,310 260,234 310,145" fill="rgba(106,130,251,0.06)" stroke="#6a82fb" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Axis labels -->
+  <text x="400" y="55" font-family="Inter, sans-serif" font-size="10" fill="#f0c27f" text-anchor="middle" font-weight="600">Cross-Domain</text>
+  <text x="400" y="65" font-family="Inter, sans-serif" font-size="10" fill="#f0c27f" text-anchor="middle" font-weight="600">Citations</text>
+  <text x="545" y="100" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="start">Implementation</text>
+  <text x="545" y="112" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="start">Speed</text>
+  <text x="598" y="234" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="start">Compression</text>
+  <text x="598" y="246" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="start">Ratio</text>
+  <text x="535" y="355" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="start">Adopter</text>
+  <text x="535" y="367" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="start">Centrality</text>
+  <text x="400" y="392" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="middle">Technology</text>
+  <text x="400" y="404" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="middle">Readiness</text>
+  <text x="265" y="355" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">Problem</text>
+  <text x="265" y="367" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">Urgency</text>
+  <text x="200" y="234" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">Recombination</text>
+  <text x="200" y="246" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">Potential</text>
+  <!-- Legend -->
+  <rect x="30" y="55" width="130" height="55" rx="4" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  <line x1="40" y1="72" x2="60" y2="72" stroke="#f0c27f" stroke-width="2"/>
+  <text x="65" y="76" font-family="Inter, sans-serif" font-size="9" fill="#e0e0e8">Transformer (7/7)</text>
+  <line x1="40" y1="92" x2="60" y2="92" stroke="#6a82fb" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="65" y="96" font-family="Inter, sans-serif" font-size="9" fill="#e0e0e8">Bitcoin (5/7)</text>
+  <!-- Data points on gold polygon -->
+  <circle cx="400" cy="85" r="4" fill="#f0c27f"/>
+  <circle cx="518" cy="125" r="4" fill="#f0c27f"/>
+  <circle cx="570" cy="230" r="4" fill="#f0c27f"/>
+  <circle cx="505" cy="330" r="4" fill="#f0c27f"/>
+  <circle cx="400" cy="355" r="4" fill="#f0c27f"/>
+  <circle cx="295" cy="330" r="4" fill="#f0c27f"/>
+  <circle cx="230" cy="230" r="4" fill="#f0c27f"/>
+</svg>

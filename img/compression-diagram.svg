@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#12121a"/>
+  <!-- Left side: scattered data points (observations) -->
+  <text x="200" y="30" font-family="Inter, sans-serif" font-size="12" fill="#889" text-anchor="middle">Observations</text>
+  <!-- Many small dots representing raw data -->
+  <g fill="#e0e0e8" opacity="0.3">
+    <circle cx="60" cy="80" r="2"/><circle cx="90" cy="120" r="2"/><circle cx="45" cy="150" r="2"/>
+    <circle cx="120" cy="90" r="2"/><circle cx="150" cy="130" r="2"/><circle cx="80" cy="170" r="2"/>
+    <circle cx="170" cy="70" r="2"/><circle cx="200" cy="110" r="2"/><circle cx="130" cy="200" r="2"/>
+    <circle cx="220" cy="150" r="2"/><circle cx="250" cy="80" r="2"/><circle cx="180" cy="230" r="2"/>
+    <circle cx="270" cy="120" r="2"/><circle cx="100" cy="250" r="2"/><circle cx="230" cy="200" r="2"/>
+    <circle cx="300" cy="160" r="2"/><circle cx="60" cy="280" r="2"/><circle cx="280" cy="220" r="2"/>
+    <circle cx="320" cy="100" r="2"/><circle cx="140" cy="270" r="2"/><circle cx="310" cy="250" r="2"/>
+    <circle cx="70" cy="310" r="2"/><circle cx="200" cy="290" r="2"/><circle cx="260" cy="270" r="2"/>
+    <circle cx="340" cy="180" r="2"/><circle cx="160" cy="320" r="2"/><circle cx="330" cy="300" r="2"/>
+    <circle cx="110" cy="340" r="2"/><circle cx="240" cy="330" r="2"/><circle cx="350" cy="270" r="2"/>
+    <circle cx="50" cy="360" r="2"/><circle cx="300" cy="340" r="2"/><circle cx="360" cy="320" r="2"/>
+    <circle cx="190" cy="360" r="2"/><circle cx="80" cy="55" r="2"/><circle cx="290" cy="60" r="2"/>
+    <circle cx="340" cy="350" r="2"/><circle cx="210" cy="55" r="2"/><circle cx="155" cy="65" r="2"/>
+    <circle cx="370" cy="140" r="2"/><circle cx="50" cy="200" r="2"/><circle cx="375" cy="230" r="2"/>
+  </g>
+  <!-- Arrow from data to theory -->
+  <path d="M 395 200 L 440 200" stroke="#f0c27f" stroke-width="2" marker-end="url(#arrowGold)"/>
+  <defs>
+    <marker id="arrowGold" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0,0 8,4 0,8" fill="#f0c27f"/>
+    </marker>
+  </defs>
+  <text x="418" y="185" font-family="Inter, sans-serif" font-size="10" fill="#f0c27f" text-anchor="middle">compress</text>
+  <!-- Right side: the theory (compact) -->
+  <text x="600" y="30" font-family="Inter, sans-serif" font-size="12" fill="#889" text-anchor="middle">Theory</text>
+  <!-- Elegant formula box -->
+  <rect x="470" y="140" width="260" height="120" rx="8" fill="rgba(240,194,127,0.08)" stroke="#f0c27f" stroke-width="1"/>
+  <text x="600" y="185" font-family="JetBrains Mono, monospace" font-size="22" fill="#f0c27f" text-anchor="middle" font-weight="600">F = G·m₁·m₂/r²</text>
+  <text x="600" y="215" font-family="Inter, sans-serif" font-size="11" fill="#889" text-anchor="middle">+ 3 laws of motion</text>
+  <text x="600" y="245" font-family="Inter, sans-serif" font-size="10" fill="#5a9" text-anchor="middle">(~50 bits of information)</text>
+  <!-- Compression ratio -->
+  <rect x="470" y="290" width="260" height="60" rx="8" fill="rgba(106,130,251,0.08)" stroke="#6a82fb" stroke-width="0.5"/>
+  <text x="600" y="315" font-family="Inter, sans-serif" font-size="11" fill="#6a82fb" text-anchor="middle">Compression Ratio</text>
+  <text x="600" y="340" font-family="Inter, sans-serif" font-size="20" fill="#f0c27f" text-anchor="middle" font-weight="700">~10⁸ : 1</text>
+  <!-- Label for data volume -->
+  <rect x="80" y="375" width="230" height="20" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <text x="195" y="389" font-family="Inter, sans-serif" font-size="10" fill="#889" text-anchor="middle">Billions of observations over centuries</text>
+  <!-- Title -->
+  <text x="400" y="22" font-family="Inter, sans-serif" font-size="13" fill="#e0e0e8" text-anchor="middle" font-weight="600">Ideas as Compression: From Data to Theory</text>
+</svg>

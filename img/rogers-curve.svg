@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" fill="none">
+  <rect width="800" height="350" fill="#12121a"/>
+  <!-- The bell curve (adoption rate) -->
+  <path d="M 60 300 C 100 298, 130 295, 160 280 C 190 260, 210 220, 240 170 C 270 120, 310 80, 360 60 C 410 40, 440 38, 470 55 C 500 70, 520 100, 550 140 C 580 180, 610 220, 650 260 C 680 280, 710 295, 750 300" stroke="#f0c27f" stroke-width="2.5" fill="none"/>
+  <!-- Fill segments with different colors for each adopter category -->
+  <!-- Innovators (2.5%) -->
+  <path d="M 60 300 C 100 298, 115 296, 130 290 L 130 300 Z" fill="#fc5c7d" opacity="0.3"/>
+  <!-- Early Adopters (13.5%) -->
+  <path d="M 130 290 C 145 282, 170 265, 210 220 C 225 198, 235 180, 240 170 L 240 300 L 130 300 Z" fill="#f0c27f" opacity="0.3"/>
+  <!-- Early Majority (34%) -->
+  <path d="M 240 170 C 270 120, 310 80, 360 60 C 390 48, 410 42, 430 45 L 430 300 L 240 300 Z" fill="#6a82fb" opacity="0.25"/>
+  <!-- Late Majority (34%) -->
+  <path d="M 430 45 C 460 55, 490 80, 520 110 C 560 155, 590 200, 620 240 L 620 300 L 430 300 Z" fill="#5a9" opacity="0.2"/>
+  <!-- Laggards (16%) -->
+  <path d="M 620 240 C 650 265, 680 282, 710 293 C 730 297, 740 299, 750 300 L 750 300 L 620 300 Z" fill="#889" opacity="0.2"/>
+  <!-- Category labels -->
+  <text x="95" y="320" font-family="Inter, sans-serif" font-size="9" fill="#fc5c7d" text-anchor="middle">2.5%</text>
+  <text x="95" y="332" font-family="Inter, sans-serif" font-size="9" fill="#fc5c7d" text-anchor="middle">Innovators</text>
+  <text x="190" y="320" font-family="Inter, sans-serif" font-size="9" fill="#f0c27f" text-anchor="middle">13.5%</text>
+  <text x="190" y="332" font-family="Inter, sans-serif" font-size="9" fill="#f0c27f" text-anchor="middle">Early Adopters</text>
+  <text x="340" y="320" font-family="Inter, sans-serif" font-size="9" fill="#6a82fb" text-anchor="middle">34%</text>
+  <text x="340" y="332" font-family="Inter, sans-serif" font-size="9" fill="#6a82fb" text-anchor="middle">Early Majority</text>
+  <text x="530" y="320" font-family="Inter, sans-serif" font-size="9" fill="#5a9" text-anchor="middle">34%</text>
+  <text x="530" y="332" font-family="Inter, sans-serif" font-size="9" fill="#5a9" text-anchor="middle">Late Majority</text>
+  <text x="690" y="320" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">16%</text>
+  <text x="690" y="332" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">Laggards</text>
+  <!-- Tipping point marker -->
+  <line x1="240" y1="50" x2="240" y2="300" stroke="#f0c27f" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+  <text x="240" y="42" font-family="Inter, sans-serif" font-size="10" fill="#f0c27f" text-anchor="middle" font-weight="600">16% Tipping Point</text>
+  <!-- S-curve overlay (cumulative adoption) -->
+  <path d="M 60 295 C 120 293, 160 288, 200 270 C 240 245, 280 200, 320 150 C 360 105, 400 75, 440 55 C 480 40, 540 30, 600 25 C 660 22, 710 21, 750 20" stroke="#6a82fb" stroke-width="1.5" stroke-dasharray="5,3" fill="none" opacity="0.5"/>
+  <text x="755" y="18" font-family="Inter, sans-serif" font-size="9" fill="#6a82fb">Cumulative (S-curve)</text>
+  <!-- Title -->
+  <text x="400" y="22" font-family="Inter, sans-serif" font-size="13" fill="#e0e0e8" text-anchor="middle" font-weight="600">Rogers' Diffusion of Innovations (1962)</text>
+  <!-- Baseline -->
+  <line x1="60" y1="300" x2="750" y2="300" stroke="#889" stroke-width="0.5" opacity="0.4"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" fill="none">
+  <rect width="800" height="380" fill="#12121a"/>
+  <!-- Title -->
+  <text x="400" y="28" font-family="Inter, sans-serif" font-size="13" fill="#e0e0e8" text-anchor="middle" font-weight="600">Kuhn's Paradigm Cycle</text>
+  <!-- Circular flow diagram -->
+  <!-- Main circle path (invisible, for reference) -->
+  <!-- Four stages arranged in a circle -->
+  <!-- Normal Science (top) -->
+  <rect x="300" y="50" width="200" height="70" rx="8" fill="rgba(106,130,251,0.12)" stroke="#6a82fb" stroke-width="1.5"/>
+  <text x="400" y="78" font-family="Inter, sans-serif" font-size="13" fill="#6a82fb" text-anchor="middle" font-weight="700">Normal Science</text>
+  <text x="400" y="98" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">Puzzle-solving within paradigm</text>
+  <text x="400" y="112" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">Anomalies accumulate slowly</text>
+  <!-- Crisis (right) -->
+  <rect x="570" y="155" width="180" height="70" rx="8" fill="rgba(252,92,125,0.12)" stroke="#fc5c7d" stroke-width="1.5"/>
+  <text x="660" y="183" font-family="Inter, sans-serif" font-size="13" fill="#fc5c7d" text-anchor="middle" font-weight="700">Crisis</text>
+  <text x="660" y="203" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">Anomalies undeniable</text>
+  <text x="660" y="217" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">Confidence collapses</text>
+  <!-- Revolution (bottom) -->
+  <rect x="300" y="260" width="200" height="70" rx="8" fill="rgba(240,194,127,0.12)" stroke="#f0c27f" stroke-width="1.5"/>
+  <text x="400" y="288" font-family="Inter, sans-serif" font-size="13" fill="#f0c27f" text-anchor="middle" font-weight="700">Revolution</text>
+  <text x="400" y="308" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">New paradigm achieves critical mass</text>
+  <text x="400" y="322" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">Old guard becomes isolated</text>
+  <!-- New Normal (left) -->
+  <rect x="50" y="155" width="180" height="70" rx="8" fill="rgba(85,170,153,0.12)" stroke="#5a9" stroke-width="1.5"/>
+  <text x="140" y="183" font-family="Inter, sans-serif" font-size="13" fill="#5a9" text-anchor="middle" font-weight="700">New Normal</text>
+  <text x="140" y="203" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">New paradigm dominant</text>
+  <text x="140" y="217" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">Cycle begins again</text>
+  <!-- Connecting arrows (clockwise) -->
+  <!-- Top → Right -->
+  <path d="M 500 90 C 540 100, 570 130, 580 155" stroke="#889" stroke-width="1.2" fill="none" marker-end="url(#arrowMid)"/>
+  <!-- Right → Bottom -->
+  <path d="M 650 225 C 630 250, 560 270, 500 280" stroke="#889" stroke-width="1.2" fill="none" marker-end="url(#arrowMid)"/>
+  <!-- Bottom → Left -->
+  <path d="M 300 295 C 260 290, 230 260, 220 225" stroke="#889" stroke-width="1.2" fill="none" marker-end="url(#arrowMid)"/>
+  <!-- Left → Top -->
+  <path d="M 155 155 C 170 130, 230 105, 300 85" stroke="#889" stroke-width="1.2" fill="none" marker-end="url(#arrowMid)"/>
+  <defs>
+    <marker id="arrowMid" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <polygon points="0,0 6,3 0,6" fill="#889"/>
+    </marker>
+  </defs>
+  <!-- Time annotations on arrows -->
+  <text x="545" y="118" font-family="Inter, sans-serif" font-size="8" fill="#fc5c7d" transform="rotate(30, 545, 118)">Anomalies mount</text>
+  <text x="575" y="265" font-family="Inter, sans-serif" font-size="8" fill="#f0c27f" transform="rotate(-30, 575, 265)">Converts flood in</text>
+  <text x="235" y="270" font-family="Inter, sans-serif" font-size="8" fill="#5a9" transform="rotate(30, 235, 270)">Textbooks rewritten</text>
+  <text x="195" y="125" font-family="Inter, sans-serif" font-size="8" fill="#6a82fb" transform="rotate(-30, 195, 125)">New puzzles emerge</text>
+  <!-- Time indicator -->
+  <text x="400" y="370" font-family="Inter, sans-serif" font-size="10" fill="#889" text-anchor="middle">Average cycle: ~20–50 years</text>
+</svg>

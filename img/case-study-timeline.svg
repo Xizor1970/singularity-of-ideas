@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" fill="none">
+  <rect width="800" height="350" fill="#12121a"/>
+  <!-- Title -->
+  <text x="400" y="25" font-family="Inter, sans-serif" font-size="13" fill="#e0e0e8" text-anchor="middle" font-weight="600">Time from Insight to Dominance</text>
+  <!-- Horizontal timeline bars -->
+  <!-- Y positions for each idea -->
+  <!-- Darwin -->
+  <text x="70" y="68" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">Darwin</text>
+  <rect x="80" y="58" width="520" height="16" rx="3" fill="rgba(240,194,127,0.2)" stroke="#f0c27f" stroke-width="0.5"/>
+  <rect x="80" y="58" width="140" height="16" rx="3" fill="#f0c27f" opacity="0.4"/>
+  <text x="150" y="70" font-family="Inter, sans-serif" font-size="8" fill="#12121a" text-anchor="middle">Private (21y)</text>
+  <text x="600" y="70" font-family="Inter, sans-serif" font-size="8" fill="#f0c27f">80 yrs to synthesis</text>
+  <!-- Relativity -->
+  <text x="70" y="108" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">Relativity</text>
+  <rect x="80" y="98" width="360" height="16" rx="3" fill="rgba(106,130,251,0.2)" stroke="#6a82fb" stroke-width="0.5"/>
+  <rect x="80" y="98" width="90" height="16" rx="3" fill="#6a82fb" opacity="0.4"/>
+  <text x="125" y="110" font-family="Inter, sans-serif" font-size="8" fill="#e0e0e8" text-anchor="middle">10y (SR)</text>
+  <circle cx="170" cy="106" r="4" fill="#f0c27f"/>
+  <text x="180" y="110" font-family="Inter, sans-serif" font-size="7" fill="#889">1919 eclipse</text>
+  <text x="440" y="110" font-family="Inter, sans-serif" font-size="8" fill="#6a82fb">~50 yrs to golden age</text>
+  <!-- The Web -->
+  <text x="70" y="148" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">The Web</text>
+  <rect x="80" y="138" width="240" height="16" rx="3" fill="rgba(85,170,153,0.2)" stroke="#5a9" stroke-width="0.5"/>
+  <rect x="80" y="138" width="30" height="16" rx="3" fill="#5a9" opacity="0.5"/>
+  <text x="95" y="150" font-family="Inter, sans-serif" font-size="7" fill="#e0e0e8">3y</text>
+  <circle cx="130" cy="146" r="4" fill="#f0c27f"/>
+  <text x="142" y="150" font-family="Inter, sans-serif" font-size="7" fill="#889">Public domain '93</text>
+  <text x="320" y="150" font-family="Inter, sans-serif" font-size="8" fill="#5a9">35 yrs: 2B sites</text>
+  <!-- Bitcoin -->
+  <text x="70" y="188" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">Bitcoin</text>
+  <rect x="80" y="178" width="200" height="16" rx="3" fill="rgba(252,92,125,0.2)" stroke="#fc5c7d" stroke-width="0.5"/>
+  <rect x="80" y="178" width="60" height="16" rx="3" fill="#fc5c7d" opacity="0.4"/>
+  <text x="110" y="190" font-family="Inter, sans-serif" font-size="8" fill="#e0e0e8" text-anchor="middle">5y</text>
+  <text x="280" y="190" font-family="Inter, sans-serif" font-size="8" fill="#fc5c7d">16 yrs: ETFs approved</text>
+  <!-- CRISPR -->
+  <text x="70" y="228" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">CRISPR</text>
+  <rect x="80" y="218" width="140" height="16" rx="3" fill="rgba(192,132,252,0.2)" stroke="#c084fc" stroke-width="0.5"/>
+  <rect x="80" y="218" width="20" height="16" rx="3" fill="#c084fc" opacity="0.5"/>
+  <text x="92" y="230" font-family="Inter, sans-serif" font-size="7" fill="#e0e0e8">1y</text>
+  <circle cx="130" cy="226" r="4" fill="#f0c27f"/>
+  <text x="142" y="230" font-family="Inter, sans-serif" font-size="7" fill="#889">Nobel 8y</text>
+  <text x="220" y="230" font-family="Inter, sans-serif" font-size="8" fill="#c084fc">11 yrs: FDA therapy</text>
+  <!-- Transformers -->
+  <text x="70" y="268" font-family="Inter, sans-serif" font-size="10" fill="#e0e0e8" text-anchor="end">Transformer</text>
+  <rect x="80" y="258" width="100" height="16" rx="3" fill="rgba(251,146,60,0.2)" stroke="#fb923c" stroke-width="0.5"/>
+  <rect x="80" y="258" width="15" height="16" rx="3" fill="#fb923c" opacity="0.5"/>
+  <text x="88" y="270" font-family="Inter, sans-serif" font-size="7" fill="#e0e0e8">1y</text>
+  <text x="180" y="270" font-family="Inter, sans-serif" font-size="8" fill="#fb923c">5 yrs: universal arch.</text>
+  <!-- Scale markers -->
+  <line x1="80" y1="295" x2="80" y2="305" stroke="#889" stroke-width="0.5"/>
+  <line x1="210" y1="295" x2="210" y2="305" stroke="#889" stroke-width="0.5"/>
+  <line x1="340" y1="295" x2="340" y2="305" stroke="#889" stroke-width="0.5"/>
+  <line x1="470" y1="295" x2="470" y2="305" stroke="#889" stroke-width="0.5"/>
+  <line x1="600" y1="295" x2="600" y2="305" stroke="#889" stroke-width="0.5"/>
+  <text x="80" y="318" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">0</text>
+  <text x="210" y="318" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">20 yrs</text>
+  <text x="340" y="318" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">40 yrs</text>
+  <text x="470" y="318" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">60 yrs</text>
+  <text x="600" y="318" font-family="Inter, sans-serif" font-size="9" fill="#889" text-anchor="middle">80 yrs</text>
+  <!-- Observation -->
+  <text x="400" y="345" font-family="Inter, sans-serif" font-size="10" fill="#f0c27f" text-anchor="middle" font-style="italic">Timelines are compressing: from 80 years (Darwin) to 5 years (Transformer)</text>
+</svg>
